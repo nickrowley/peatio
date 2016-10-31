@@ -1,0 +1,11 @@
+- unless @one_spreadcoins.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {spreadcoins: @one_spreadcoins}
+- unless @all_spreadcoins.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {spreadcoins: @all_spreadcoins}
+
+- if @all_spreadcoins.empty? and @one_spreadcoins.empty?
+  h3.text-info.text-center = t('.empty')

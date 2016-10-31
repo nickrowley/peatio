@@ -1,0 +1,36 @@
+.row
+  .col-xs-8
+    .panel.panel-primary
+      .panel-heading
+        span = t('.deposit')
+      .panel-body
+        = description_for :member do
+          = item_for @cny, :sn
+          = item_for @cny.member, :name
+          = item_for @cny, :amount
+          = item_for @cny, :created_at
+          hr.split
+          = item_for @cny, :fund_extra, cny_code_to_name(@cny.fund_extra)
+          = item_for @cny, :fund_uid
+          = item_for @cny, :aasm_state_text
+
+  .col-xs-8
+    .panel class='panel-primary'
+      .panel-heading
+        span = t('.target_deposit')
+      .panel-body
+        = form_for [:admin, @cny] do |f|
+          dl.dl-horizontal.dl-member
+            = item_for @cny, :sn
+            = item_for @cny, :amount
+            = item_for @cny, :done_at
+            - if @cny.may_submit? or @cny.may_accept?
+              dt = t('.txid')
+              dd = f.text_field :txid, class: 'col-xs-24'
+              hr.split
+              = f.submit t('.accept'), class: 'btn btn-primary pull-right', confirm: t('.confirm')
+            - else
+              = item_for @cny, :txid
+
+  .col-xs-8
+    = render partial: 'shared/admin/member', locals: {member: @cny.member}

@@ -1,0 +1,6 @@
+.panel.panel-primary
+  .panel-heading = t('.oneday')
+  = render partial: 'table', locals: {usds: @oneday_usds}
+.panel.panel-success
+  .panel-heading = t('.available')
+  = render partial: 'table', locals: {usds: @available_usds}

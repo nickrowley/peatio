@@ -7,13 +7,13 @@ namespace :replay do
     data = File.exist?(path) ? JSON.load(File.open(path)) : []
 
     puts "begin replaying at #{Time.now}"
-    players = Member.find_all_by_email(['foo@peatio.dev','bar@peatio.dev']).collect do |m|
+    players = Member.find_all_by_email(['foo@peatio.com','bar@peatio.com']).collect do |m|
       previous = data.find{|hash| hash['id'] == m.id }
       array = previous ? previous['balance_array'] : []
       {id: m.id, balance_array: replay(m, array)}
     end
 
-    students = Member.find_all_by_email(['foo@peatio.dev','bar@peatio.dev']).collect do |m|
+    students = Member.find_all_by_email(['foo@peatio.com','bar@peatio.com']).collect do |m|
       previous = data.find{|hash| hash['id'] == m.id }
       array = previous ? previous['balance_array'] : []
       {id: m.id, balance_array: replay_student(m, array)}
@@ -35,7 +35,7 @@ namespace :replay do
 
     puts "#{bln_arr.size} -> "
 
-    balances = {'btc' => [], 'cny' => []}
+    balances = {'btc' => [], 'cny' => [], 'ltc' => [], 'bcr' => [], 'spr' => [], 'dash' => [], 'eur' => [], 'usd' => [], 'gbp' => [], 'zar' => []}
     m.accounts.each do |acc|
       next unless balances.keys.include?(acc.currency)
       v0 = acc.versions.order(:id).where('created_at < ?', start).last
@@ -74,7 +74,7 @@ namespace :replay do
 
     puts "#{bln_arr.size} -> "
 
-    balances = {'btc' => [], 'cny' => []}
+    balances = {'btc' => [], 'cny' => [], 'ltc' => [], 'bcr' => [], 'spr' => [], 'dash' => [], 'eur' => [], 'usd' => [], 'gbp' => [], 'zar' => []}
     m.accounts.each do |acc|
       next unless balances.keys.include?(acc.currency)
       v0 = acc.versions.order(:id).where('created_at < ?', start).last

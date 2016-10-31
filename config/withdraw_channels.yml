@@ -2,9 +2,37 @@
   key: satoshi
   currency: btc
   fixed: 8
-  fee: 0.0005
+  fee: 0.0001
   inuse: true
   type: WithdrawChannelSatoshi
+- id: 201
+  key: litecoin
+  currency: ltc
+  fixed: 8
+  fee: 0.0001
+  inuse: true
+  type: WithdrawChannelLitecoin
+- id: 202
+  key: bitcredit
+  currency: bcr
+  fixed: 8
+  fee: 0.0001
+  inuse: true
+  type: WithdrawChannelBitcredit
+- id: 203
+  key: dash
+  currency: dash
+  fixed: 8
+  fee: 0.0001
+  inuse: true
+  type: WithdrawChannelDash
+- id: 204
+  key: spreadcoin
+  currency: spr
+  fixed: 8
+  fee: 0.0001
+  inuse: true
+  type: WithdrawChannelSpreadcoin
 - id: 400
   key: bank
   currency: cny
@@ -12,7 +40,52 @@
   fee_max: 0
   min: 100
   max: 50000
-  fee: 0.003
+  fee: 0.01
   proportion: true
   inuse: true
   type: WithdrawChannelBank
+- id: 401
+  key: bank
+  currency: usd
+  fixed: 2
+  fee_max: 0
+  min: 100
+  max: 50000
+  fee: 0.01
+  proportion: true
+  inuse: true
+  type: WithdrawChannelUsd
+- id: 402
+  key: bank
+  currency: gbp
+  fixed: 2
+  fee_max: 0
+  min: 100
+  max: 50000
+  fee: 0.01
+  proportion: true
+  inuse: true
+  type: WithdrawChannelGbp
+- id: 403
+  key: bank
+  currency: zar
+  fixed: 2
+  fee_max: 0
+  min: 100
+  max: 50000
+  fee: 0.01
+  proportion: true
+  inuse: true
+  type: WithdrawChannelZar
+- id: 404
+  key: bank
+  currency: eur
+  fixed: 2
+  fee_max: 0
+  min: 100
+  max: 50000
+  fee: 0.01
+  proportion: true
+  inuse: true
+  type: WithdrawChannelEur
+

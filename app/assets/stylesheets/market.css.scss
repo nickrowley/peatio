@@ -617,7 +617,15 @@ header {
       tr { display: none; }
       &.all { tr { display: block; } }
       &.cny { tr.quote-cny { display: block; } }
+      &.usd { tr.quote-usd { display: block; } }
+      &.eur { tr.quote-eur { display: block; } }
+      &.gbp { tr.quote-gbp { display: block; } }
+      &.zar { tr.quote-zar { display: block; } }
       &.btc { tr.quote-btc { display: block; } }
+      &.ltc { tr.quote-ltc { display: block; } }
+      &.bcr { tr.quote-bcr { display: block; } }
+      &.dash { tr.quote-dash { display: block; } }
+      &.spr { tr.quote-spr { display: block; } }
     }
   }
 }

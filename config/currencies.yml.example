@@ -7,11 +7,63 @@
   assets:
     accounts:
       -
-        bank: '招商银行'
+        bank: 'Stanbic Bank'
         address: '6225 0885 6022 3501'
         password: '111111'
         tel: '95555'
 - id: 2
+  key: rand
+  code: zar
+  symbol: "R"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Stanbic Bank'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 3
+  key: dollar
+  code: usd
+  symbol: "$"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Stanbic Bank'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 4
+  key: pound
+  code: gbp
+  symbol: "£"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Stanbic Bank'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 5
+  key: euro
+  code: eur
+  symbol: "€"
+  coin: false
+  precision: 2
+  assets:
+    accounts:
+      -
+        bank: 'Stanbic Bank'
+        address: '6225 0885 6022 3501'
+        password: '111111'
+        tel: '95555'
+- id: 6
   key: satoshi
   code: btc
   symbol: "฿"
@@ -23,4 +75,56 @@
   assets:
     accounts:
       -
-        address: 1HjfnJpQmANtuW7yr1ggeDfyfe1kDK7rm3
+        address: 1Ak7eVm9ToQ7oVZMx9wogLRugw96Y73FM2
+- id: 7
+  key: bitcredit
+  code: bcr
+  symbol: "฿"
+  coin: true
+  quick_withdraw_max: 0
+  rpc: http://username:password@127.0.0.1:18332
+  blockchain: https://chainz.cryptoid.info/bcr/tx.dws?{txid}
+  address_url: https://chainz.cryptoid.info/bcr/address.dws?{address}
+  assets:
+    accounts:
+      -
+        address: 62utxVSNmt43kZM7uFxsUMP8tgunHgp5V5
+- id: 8
+  key: litecoin
+  code: ltc
+  symbol: "Ł"
+  coin: true
+  quick_withdraw_max: 0
+  rpc: http://username:password@127.0.0.1:18332
+  blockchain: https://chainz.cryptoid.info/ltc/tx.dws?{txid}
+  address_url: https://chainz.cryptoid.info/ltc/address.dws?{address}
+  assets:
+    accounts:
+      -
+        address: LLZ48xht4E9GUByPNsxV4L2DXgyGfT2UYX
+- id: 9
+  key: dash
+  code: dash
+  symbol: "D"
+  coin: true
+  quick_withdraw_max: 0
+  rpc: http://username:password@127.0.0.1:18332
+  blockchain: https://chainz.cryptoid.info/dash/tx.dws?{txid}
+  address_url: https://chainz.cryptoid.info/dash/address.dws?{address}
+  assets:
+    accounts:
+      -
+        address: XrbzawwixkU7P6wxNgRmUYUE8dNKa6Cu4q
+- id: 10
+  key: spreadcoin
+  code: spr
+  symbol: "S"
+  coin: true
+  quick_withdraw_max: 0
+  rpc: http://username:password@127.0.0.1:18332
+  blockchain: https://chainz.cryptoid.info/spr/tx.dws?{txid}
+  address_url: https://chainz.cryptoid.info/spr/address.dws?{address}
+  assets:
+    accounts:
+      -
+        address: SMqN1xwjbXqUohKbRrWdYsDZJerncEgDjy

@@ -11,6 +11,22 @@ class Deposit extends PeatioModel.Model
       $.each records, (idx, record) ->
         Deposit.create(record)
 
+  afterScope: ->
+    "#{@pathName()}"
+
+  pathName: ->
+    switch @currency
+      when 'cny' then 'banks'
+      when 'btc' then 'satoshis'
+      when 'eur' then 'eurs'
+      when 'ltc' then 'litecoins'
+      when 'spr' then 'spreadcoins'
+      when 'usd' then 'usds'
+      when 'bcr' then 'bitcredits'
+      when 'gbp' then 'gbps'
+      when 'dash' then 'dashs'
+      when 'zar' then 'zars'
+
 window.Deposit = Deposit
 
 

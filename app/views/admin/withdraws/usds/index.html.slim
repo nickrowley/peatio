@@ -1,0 +1,12 @@
+- unless @one_usds.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {usds: @one_usds}
+
+- unless @all_usds.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {usds: @all_usds}
+
+- if @all_usds.empty? and @one_usds.empty?
+  h3.text-info.text-center = t('.empty')

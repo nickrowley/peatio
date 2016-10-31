@@ -20,7 +20,16 @@ en:
       admin/withdraws_grid: Withdraws
       deposits/bank: Deposit Bank
       withdraws/bank: Withdraw Bank
-      withdraws/satoshi: Withdraw
+      withdraws/cny: Withdraw CNY
+      withdraws/usd: Withdraw USD
+      withdraws/gbp: Withdraw GBP
+      withdraws/eur: Withdraw EUR
+      withdraws/zar: Withdraw ZAR
+      withdraws/satoshi: Withdraw BTC
+      withdraws/litecoin: Withdraw LTC
+      withdraws/bitcredit: Withdraw BCR
+      withdraws/dash: Withdraw DASH
+      withdraws/spreadcoin: Withdraw SPR
     attributes:
       api_token:
         access_key: Access Key
@@ -156,7 +165,137 @@ en:
         amount: Amount
         remark: Remark
         created_at: Created At
+      withdraws/usd:
+        id: ID
+        member_name: Member
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_source: Bank
+        fund_extra: Bank
+        fund_extra_text: Bank
+        fund_uid: Bank Account
+        sum: Amount
+        fee: Fee
+        amount: Amount
+        remark: Remark
+        created_at: Created At
+      withdraws/cny:
+        id: ID
+        member_name: Member
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_source: Bank
+        fund_extra: Bank
+        fund_extra_text: Bank
+        fund_uid: Bank Account
+        sum: Amount
+        fee: Fee
+        amount: Amount
+        remark: Remark
+        created_at: Created At
+      withdraws/gbp:
+        id: ID
+        member_name: Member
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_source: Bank
+        fund_extra: Bank
+        fund_extra_text: Bank
+        fund_uid: Bank Account
+        sum: Amount
+        fee: Fee
+        amount: Amount
+        remark: Remark
+        created_at: Created At
+      withdraws/eur:
+        id: ID
+        member_name: Member
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_source: Bank
+        fund_extra: Bank
+        fund_extra_text: Bank
+        fund_uid: Bank Account
+        sum: Amount
+        fee: Fee
+        amount: Amount
+        remark: Remark
+        created_at: Created At
+      withdraws/zar:
+        id: ID
+        member_name: Member
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_source: Bank
+        fund_extra: Bank
+        fund_extra_text: Bank
+        fund_uid: Bank Account
+        sum: Amount
+        fee: Fee
+        amount: Amount
+        remark: Remark
+        created_at: Created At
       deposits/bank:
+        created_at: Created At
+        holder: Holder
+        fund_extra: Sender Bank
+        fund_uid: Sender Account
+        member_sn: Member SN
+        member_name: Sender Name
+        amount: Amount
+        sn: SN
+        state_and_action: State/Action
+        label: Label
+        fund_source: Fund Source
+      deposits/usd:
+        created_at: Created At
+        holder: Holder
+        fund_extra: Sender Bank
+        fund_uid: Sender Account
+        member_sn: Member SN
+        member_name: Sender Name
+        amount: Amount
+        sn: SN
+        state_and_action: State/Action
+        label: Label
+        fund_source: Fund Source
+      deposits/cny:
+        created_at: Created At
+        holder: Holder
+        fund_extra: Sender Bank
+        fund_uid: Sender Account
+        member_sn: Member SN
+        member_name: Sender Name
+        amount: Amount
+        sn: SN
+        state_and_action: State/Action
+        label: Label
+        fund_source: Fund Source
+      deposits/eur:
+        created_at: Created At
+        holder: Holder
+        fund_extra: Sender Bank
+        fund_uid: Sender Account
+        member_sn: Member SN
+        member_name: Sender Name
+        amount: Amount
+        sn: SN
+        state_and_action: State/Action
+        label: Label
+        fund_source: Fund Source
+      deposits/gbp:
+        created_at: Created At
+        holder: Holder
+        fund_extra: Sender Bank
+        fund_uid: Sender Account
+        member_sn: Member SN
+        member_name: Sender Name
+        amount: Amount
+        sn: SN
+        state_and_action: State/Action
+        label: Label
+        fund_source: Fund Source
+      deposits/zar:
         created_at: Created At
         holder: Holder
         fund_extra: Sender Bank
@@ -174,7 +313,87 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
+      deposits/litecoin:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/bitcredits:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/spreadcoins:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
+      deposits/dash:
+        created_at: Created At
+        txid: Transaction ID
+        amount: Amount
+        confirmations: Confirmation
+        aasm_state_text: State
       withdraws/satoshi:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/litecoin:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bitcredit:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/spreadcoins:
+        id: ID
+        member_name: Account
+        currency_obj_key_text: Currency
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/dash:
         id: ID
         member_name: Account
         currency_obj_key_text: Currency
@@ -249,6 +468,30 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
+        withdraws/litecoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/bitcredit:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/spreadcoin:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
+        withdraws/dash:
+          attributes:
+            fund_uid:
+              blank: Please enter your withdrawal address
+              invalid: Invalid withdrawals address, please review.
+              ismine: Please use a new address.
         two_factor:
           attributes:
             otp:
@@ -272,56 +515,82 @@ en:
           sum: limit sum price %{l} ~ %{h}
           precision: minimum precision %{p}
   banks:
-    icbc: Industryand Commercial Bank of China
-    cbc: Construction Bank of China
-    bc: Bank of China
-    bcm: Bank of Communications
-    abc: Agriculture Bank of China
-    cmb: China Merchants Bank Ltd
-    cmbc: China Minsheng Banking Co., Ltd
-    cncb: China CITIC Bank
-    hxb: Hua Xia Bank Co., Ltd.
-    cib: Industrial Bank Co., Ltd
-    spdb: Shanghai Pudong Development Bank
-    bob: Bank of Beijing
-    ceb: China Everbright Bank CO.LTD
-    sdb: Shenzhen Development Bank
-    pab: Ping An Bank Co., Ltd.
-    gdb: Guangdong Development Bank
-    psbc: Postal Savings Bank of China
+    ecoc: Econet Ecocash Mobile Banking
+    stnbic: Stanbic Bank Zimbabwe
+    stdchrtd: Standard Chartered Bank Zimbabwe
+    barclays: Barclays Bank Zimbabwe
+    cbz: Commercial Bank Zimbabwe
+    nmb: NMB Bank Zimbabwe
+    steward: Steward Bank Zimbabwe
+    mbca: MBCA Bank Zimbabwe
+    cabs: Central African Building Society
+    ecobank: EcoBank Zimbabwe
+    metbnk: MetBank Zimbabwe
+    bbnk: BitBank Zimbabwe
+    zb: ZB Bank Zimbabwe
   market:
     currency:
       btc: BTC
       cny: CNY
-      doge: DOGE
-      pts: PTS
+      dash: DASH
+      bcr: BCR
       ltc: LTC
+      spr: SPR
+      usd: USD
+      gbp: GBP
+      zar: ZAR
+      eur: EUR      
   currency:
     satoshi:
       key: BTC
       code: BTC
       name: Bitcoin
       format: '0,0.0000'
-    bitsharesx:
-      key: BTS
-      code: BTSX
-      name: BitsharesX
+    spreadcoin:
+      key: SPR
+      code: SPR
+      name: Spreadcoin
+      format: '0,0.0000'
+    litecoin:
+      key: LTC
+      code: LTC
+      name: Litecoin
       format: '0,0.0000'
     renminbi:
       key: CNY
       code: CNY
       name: Chinese Yuan
       format: '0,0.00'
-    dogecoin:
-      key: DOG
-      code: DOGE
-      name: Dogecoin
+    dash:
+      key: DASH
+      code: DASH
+      name: Dash
       format: '0,0.0000'
-    protoshare:
-      key: PTS
-      code: PTS
-      name: Protoshare
+    bitcredit:
+      key: BCR
+      code: BCR
+      name: Bitcredit
       format: '0,0.0000'
+    rand:
+      key: ZAR
+      code: ZAR
+      name: South Afican Rand
+      format: '0,0.00'
+    dollar:
+      key: USD
+      code: USD
+      name: United States Dollar 
+      format: '0,0.00'
+    euro:
+      key: EUR
+      code: EUR
+      name: EURO 
+      format: '0,0.00'                  
+    pound:
+      key: GBP
+      code: GBP
+      name: British Pound
+      format: '0,0.00'
   datagrid:
     empty: no data found
     filters:
@@ -460,14 +729,122 @@ en:
       latency: 10 minutes
       transfer: Manual
       go: Deposit
+    usd:
+      key: Bank transfer
+      title: Bank transfer
+      intro: Bank transfer deposits, recommend for large recharge
+      latency: 10 minutes
+      transfer: Manual
+      go: Deposit
+    cny:
+      key: Bank transfer
+      title: Bank transfer
+      intro: Bank transfer deposits, recommend for large recharge
+      latency: 10 minutes
+      transfer: Manual
+      go: Deposit
+    gbp:
+      key: Bank transfer
+      title: Bank transfer
+      intro: Bank transfer deposits, recommend for large recharge
+      latency: 10 minutes
+      transfer: Manual
+      go: Deposit
+    eur:
+      key: Bank transfer
+      title: Bank transfer
+      intro: Bank transfer deposits, recommend for large recharge
+      latency: 10 minutes
+      transfer: Manual
+      go: Deposit
+    zar:
+      key: Bank transfer
+      title: Bank transfer
+      intro: Bank transfer deposits, recommend for large recharge
+      latency: 10 minutes
+      transfer: Manual
+      go: Deposit
     satoshi:
       key: Block Chain
       title: Bitcoin Deposits
-      intro: Deposit bitcoin from your own wallet address to Peatio account
+      intro: Deposit bitcoin from your own wallet address to BCR-E account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    litecoin:
+      key: Block Chain
+      title: Litecoin Deposits
+      intro: Deposit litecoins from your own wallet address to BCR-E account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    bitcredit:
+      key: Block Chain
+      title: Bitcredit Deposits
+      intro: Deposit bitcredit from your own wallet address to BCR-E account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    spreadcoin:
+      key: Block Chain
+      title: Spreadcoin Deposits
+      intro: Deposit spreadcoins from your own wallet address to BCR-E account
+      latency: 1 confirmation
+      transfer: Manual
+      go: Deposit
+    dash:
+      key: Block Chain
+      title: Dash Deposits
+      intro: Deposit dash from your own wallet address to BCR-E account
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
   deposits/bank:
+    aasm_state:
+      submitting: Submitting
+      cancelled: Cancelled
+      submitted: Submitted
+      accepted: Accepted
+      rejected: Rejected
+      checked: Checked
+      warning: Warning
+  deposits/eur:
+    aasm_state:
+      submitting: Submitting
+      cancelled: Cancelled
+      submitted: Submitted
+      accepted: Accepted
+      rejected: Rejected
+      checked: Checked
+      warning: Warning
+  deposits/gbp:
+    aasm_state:
+      submitting: Submitting
+      cancelled: Cancelled
+      submitted: Submitted
+      accepted: Accepted
+      rejected: Rejected
+      checked: Checked
+      warning: Warning
+  deposits/usd:
+    aasm_state:
+      submitting: Submitting
+      cancelled: Cancelled
+      submitted: Submitted
+      accepted: Accepted
+      rejected: Rejected
+      checked: Checked
+      warning: Warning
+  deposits/cny:
+    aasm_state:
+      submitting: Submitting
+      cancelled: Cancelled
+      submitted: Submitted
+      accepted: Accepted
+      rejected: Rejected
+      checked: Checked
+      warning: Warning
+  deposits/zar:
     aasm_state:
       submitting: Submitting
       cancelled: Cancelled
@@ -481,7 +858,94 @@ en:
       satoshis:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
+      litecoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      bitcredits:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      spreadcoins:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
+      dashs:
+        gen_address:
+          require_transaction: it can't generate new address if it hasn't been used.
       banks:
+        destroy:
+          notice: Revocation request is successful.
+        create:
+          notice: Recharge request successfully submitted. Use the info below to complete the bank transfer.
+          submit: Submit
+        new:
+          fund_source: Select Fund Source
+          manage_fund_source: Manage Fund Source
+          submit: Submit
+        edit:
+          bank: Receive Bank Name
+          branch: Receive Bank Branch
+          hodler: Receive holder
+          account: Receive Account
+      usds:
+        destroy:
+          notice: Revocation request is successful.
+        create:
+          notice: Recharge request successfully submitted. Use the info below to complete the bank transfer.
+          submit: Submit
+        new:
+          fund_source: Select Fund Source
+          manage_fund_source: Manage Fund Source
+          submit: Submit
+        edit:
+          bank: Receive Bank Name
+          branch: Receive Bank Branch
+          hodler: Receive holder
+          account: Receive Account
+      cnys:
+        destroy:
+          notice: Revocation request is successful.
+        create:
+          notice: Recharge request successfully submitted. Use the info below to complete the bank transfer.
+          submit: Submit
+        new:
+          fund_source: Select Fund Source
+          manage_fund_source: Manage Fund Source
+          submit: Submit
+        edit:
+          bank: Receive Bank Name
+          branch: Receive Bank Branch
+          hodler: Receive holder
+          account: Receive Account
+      eurs:
+        destroy:
+          notice: Revocation request is successful.
+        create:
+          notice: Recharge request successfully submitted. Use the info below to complete the bank transfer.
+          submit: Submit
+        new:
+          fund_source: Select Fund Source
+          manage_fund_source: Manage Fund Source
+          submit: Submit
+        edit:
+          bank: Receive Bank Name
+          branch: Receive Bank Branch
+          hodler: Receive holder
+          account: Receive Account
+      gbps:
+        destroy:
+          notice: Revocation request is successful.
+        create:
+          notice: Recharge request successfully submitted. Use the info below to complete the bank transfer.
+          submit: Submit
+        new:
+          fund_source: Select Fund Source
+          manage_fund_source: Manage Fund Source
+          submit: Submit
+        edit:
+          bank: Receive Bank Name
+          branch: Receive Bank Branch
+          hodler: Receive holder
+          account: Receive Account
+      zars:
         destroy:
           notice: Revocation request is successful.
         create:
@@ -599,6 +1063,66 @@ en:
         create:
           notice: Withdrawal request successfully submitted. Use the info below to
             complete the bank transfer.
+      litecoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      spreadcoins:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      bitcredits:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
+      dashs:
+        destroy:
+          notice: Withdraw been canceled, frozen balance has returned to your account
+        update:
+          notice: Withdraw request is submit successful, we will process it as soon
+            as possible
+          alert_two_factor: Two-Factor Authentication error
+        new:
+          submit: Submit
+          allin: All-In
+          fund_source_label: Label
+          manage_fund_source: Manage Fund Source
+        create:
+          notice: Withdrawal request successfully submitted. Use the info below to
+            complete the bank transfer.
     tickets:
       index:
         new_ticket: New Ticket
@@ -621,7 +1145,7 @@ en:
       view_open_tickets: View open tickets
     account_versions:
       index:
-        description: Every transaction and every penny of income in Peatio are well
+        description: Every transaction and every penny of income in BCR-E are well
           documented and exhaustive.
     api_tokens:
       user_tokens:
@@ -670,11 +1194,35 @@ en:
         liability-proof: Proof of Liabilities
         btc-assets: BTC Assets
         cny-assets: CNY Assets
+        usd-assets: USD Assets
+        gbp-assets: GBP Assets
+        eur-assets: EUR Assets
+        zar-assets: ZAR Assets
+        spr-assets: SPR Assets
+        ltc-assets: LTC Assets
+        bcr-assets: BCR Assets
+        dash-assets: DASH Assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-cny: Verify My CNY Assets
+        verify-usd: Verify My USD Assets
+        verify-gbp: Verify My GBP Assets
+        verify-eur: Verify My EUR Assets
+        verify-zar: Verify My ZAR Assets
+        verify-ltc: Verify My LTC Assets
+        verify-spr: Verify My SPR Assets
+        verify-bcr: Verify My BCR Assets
+        verify-dash: Verify My DASH Assets
         btc-assets-total: 'Total BTC assets of exchange: '
         cny-assets-total: 'Total CNY assets of exchange: '
+        usd-assets-total: 'Total USD assets of exchange: '
+        gbp-assets-total: 'Total GBP assets of exchange: '
+        eur-assets-total: 'Total EUR assets of exchange: '
+        zar-assets-total: 'Total ZAR assets of exchange: '
+        spr-assets-total: 'Total SPR assets of exchange: '
+        ltc-assets-total: 'Total LTC assets of exchange: '
+        bcr-assets-total: 'Total BCR assets of exchange: '
+        dash-assets-total: 'Total DASH assets of exchange: '
       liability_proof:
         title: Proof of Liabilities
         intro: As an exchange, our liabilities refer to the sum of money (in both
@@ -696,10 +1244,58 @@ en:
         intro: All of exchange's BTC assets are listed here.
         total: Total BTC Assets
         address: Address
+      spr_assets:
+        title: SPR Assets
+        intro: All of exchange's SPR assets are listed here.
+        total: Total SPR Assets
+        address: Address
+      ltc_assets:
+        title: LTC Assets
+        intro: All of exchange's LTC assets are listed here.
+        total: Total LTC Assets
+        address: Address
+      bcr_assets:
+        title: BCR Assets
+        intro: All of exchange's BCR assets are listed here.
+        total: Total BCR Assets
+        address: Address
+      dash_assets:
+        title: DASH Assets
+        intro: All of exchange's DASH assets are listed here.
+        total: Total DASH Assets
+        address: Address
       cny_assets:
         title: CNY Assets
         intro: All of exchange's CNY assets are listed here.
         total: Total CNY Assets
+        description: " <p>For supervision, you can inquiry the balance of our deposit
+          account:</p> <p>Bank: %{bank}</p> <p>Account： %{address}</p> <p>Inquiry
+          Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
+      usd_assets:
+        title: USD Assets
+        intro: All of exchange's USD assets are listed here.
+        total: Total USD Assets
+        description: " <p>For supervision, you can inquiry the balance of our deposit
+          account:</p> <p>Bank: %{bank}</p> <p>Account： %{address}</p> <p>Inquiry
+          Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
+      eur_assets:
+        title: EUR Assets
+        intro: All of exchange's EUR assets are listed here.
+        total: Total EUR Assets
+        description: " <p>For supervision, you can inquiry the balance of our deposit
+          account:</p> <p>Bank: %{bank}</p> <p>Account： %{address}</p> <p>Inquiry
+          Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
+      zar_assets:
+        title: ZAR Assets
+        intro: All of exchange's ZAR assets are listed here.
+        total: Total ZAR Assets
+        description: " <p>For supervision, you can inquiry the balance of our deposit
+          account:</p> <p>Bank: %{bank}</p> <p>Account： %{address}</p> <p>Inquiry
+          Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
+      gbp_assets:
+        title: GBP Assets
+        intro: All of exchange's GBP assets are listed here.
+        total: Total GBP Assets
         description: " <p>For supervision, you can inquiry the balance of our deposit
           account:</p> <p>Bank: %{bank}</p> <p>Account： %{address}</p> <p>Inquiry
           Password： %{password}</p> <p>Inquiry Tel.： %{tel}</p>"
@@ -710,6 +1306,14 @@ en:
         account_history: Account History
         cny_format: '0.00'
         btc_format: '0.00000000'
+        usd_format: '0.00'
+        spr_format: '0.00000000'
+        ltc_format: '0.00000000'
+        eur_format: '0.00'
+        bcr_format: '0.00000000'
+        gbp_format: '0.00'
+        dash_format: '0.00000000'
+        zar_format: '0.00'
         reason:
           cny:
             strike_add: Plus
@@ -717,7 +1321,55 @@ en:
             deposit: Deposit
             withdraw: Withdraw
             fix: Fix
+          usd:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          eur:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          gbp:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          zar:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
           btc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          spr:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          bcr:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          ltc:
+            strike_add: Plus
+            strike_sub: Sub
+            deposit: Deposit
+            withdraw: Withdraw
+            fix: Fix
+          dash:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -766,6 +1418,13 @@ en:
         all_html: "<i class='fa fa-check'></i><span>All Markets</span>"
         cny_html: "<i class='fa fa-check'></i><span>CNY Markets</span>"
         btc_html: "<i class='fa fa-check'></i><span>BTC Markets</span>"
+        bcr_html: "<i class='fa fa-check'></i><span>BCR Markets</span>"
+        spr_html: "<i class='fa fa-check'></i><span>SPR Markets</span>"
+        ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
+        usd_html: "<i class='fa fa-check'></i><span>USD Markets</span>"
+        gbp_html: "<i class='fa fa-check'></i><span>GBP Markets</span>"
+        eur_html: "<i class='fa fa-check'></i><span>EUR Markets</span>"
+        zar_html: "<i class='fa fa-check'></i><span>ZAR Markets</span>"
         price: Price
         change: "24h %"
       range_switch:
@@ -957,6 +1616,14 @@ en:
         title: "%{icon} %{c} Account"
         cny_format: '0.00'
         btc_format: '0.00000000'
+        usd_format: '0.00'
+        spr_format: '0.00000000'
+        ltc_format: '0.00000000'
+        gbp_format: '0.00'
+        bcr_format: '0.00000000'
+        eur_format: '0.00'
+        dash_format: '0.00000000'
+        zar_format: '0.00'
         total: Total
   guides:
     private:
@@ -1016,15 +1683,15 @@ en:
       panel: Login
       new:
         title: Login my account
-        intro: Login Peatio now for you to exchange.
+        intro: Login BCR-E now for you to exchange.
       failure:
         title: Login my account
-        intro: Login Peatio now for you to exchange.
+        intro: Login BCR-E now for you to exchange.
     identities:
       panel: Create Account
       new:
         title: Create My Account
-        intro: This will be your only ID on Peatio which is necessary for your exchange
+        intro: This will be your only ID on BCR-E which is necessary for your exchange
           , deposit and withdrawal . please fill it out carefully.
       edit:
         panel: My Account
@@ -1040,7 +1707,7 @@ en:
         email: E-mail Address
         password: Password
       identity:
-        email: Example：xiaobai@example.com
+        email: Example：anyone@example.com
         password: Please set your login password
         password_confirmation: Confirm your password
         edit:
@@ -1055,12 +1722,32 @@ en:
         origin_volume: Sell Volume
         sum: Total Turnover
       reset_password:
-        email: For example：xiaobai@example.com
+        email: For Example：anyone@example.com
         password: Please set your login password!
       withdraw:
         bank:
           sum: Minimum amount 100
+        usd:
+          sum: Minimum amount 100
+        gbp:
+          sum: Minimum amount 100
+        eur:
+          sum: Minimum amount 100
+        zar:
+          sum: Minimum amount 100
         satoshi:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        litecoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        spreadcoin:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        bitcredit:
+          sum: Minimum amount 0.001
+          fund_extra: Enter a label for this address (optional)
+        dash:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
     hints:
@@ -1091,7 +1778,45 @@ en:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
           fund_extra: If your bank is no longer in the list, please contact customer
             service
+        usd:
+          member_name: "<span class='text-danger'>Withdraw bank account name must
+            match your name used for real-name authentication</span>"
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+          fund_extra: If your bank is no longer in the list, please contact customer
+            service
+        gbp:
+          member_name: "<span class='text-danger'>Withdraw bank account name must
+            match your name used for real-name authentication</span>"
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+          fund_extra: If your bank is no longer in the list, please contact customer
+            service
+        eur:
+          member_name: "<span class='text-danger'>Withdraw bank account name must
+            match your name used for real-name authentication</span>"
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+          fund_extra: If your bank is no longer in the list, please contact customer
+            service
+        zar:
+          member_name: "<span class='text-danger'>Withdraw bank account name must
+            match your name used for real-name authentication</span>"
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+          fund_extra: If your bank is no longer in the list, please contact customer
+            service
+        cny:
+          member_name: "<span class='text-danger'>Withdraw bank account name must
+            match your name used for real-name authentication</span>"
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+          fund_extra: If your bank is no longer in the list, please contact customer
+            service
         satoshi:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        litecoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        bitcredit:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        spreadcoin:
+          sum: "<a target='_balance' href='#'>Fee structure</a>"
+        dash:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -1135,10 +1860,63 @@ en:
           sum: Amount
           account_balance: Account Balance
           member_name: Account Holder Name
+        usd:
+          fund_extra: Bank
+          sum: Amount
+          account_balance: Account Balance
+          member_name: Account Holder Name
+        gbp:
+          fund_extra: Bank
+          sum: Amount
+          account_balance: Account Balance
+          member_name: Account Holder Name
+        eur:
+          fund_extra: Bank
+          sum: Amount
+          account_balance: Account Balance
+          member_name: Account Holder Name
+        zar:
+          fund_extra: Bank
+          sum: Amount
+          account_balance: Account Balance
+          member_name: Account Holder Name
+        cny:
+          fund_extra: Bank
+          sum: Amount
+          account_balance: Account Balance
+          member_name: Account Holder Name
         satoshi:
           fee: Fee
           sum: Amount
           fund_uid: Bitcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        litecoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Litecoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        bitcredit:
+          fee: Fee
+          sum: Amount
+          fund_uid: Bitcredit Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        spreadcoin:
+          fee: Fee
+          sum: Amount
+          fund_uid: Spreadcoin Address
+          fund_extra: Label
+          account_balance: Account Balance
+          member_name: Account
+        dash:
+          fee: Fee
+          sum: Amount
+          fund_uid: Dash Address
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
@@ -1157,7 +1935,96 @@ en:
           confirm: Confirm recharge?
         update:
           blank_txid: TxID can't be blank
+      usds:
+        index:
+          oneday: Requests in the last 24 hours
+          available: All Pending Requests
+        show:
+          alert: Recharge cannot be located.
+          notice: The recharge have been successful.
+          deposit: Deposit Request
+          accept: Accept
+          target_deposit: Wire Transfer
+          confirm: Confirm recharge?
+        update:
+          blank_txid: TxID can't be blank
+      gbps:
+        index:
+          oneday: Requests in the last 24 hours
+          available: All Pending Requests
+        show:
+          alert: Recharge cannot be located.
+          notice: The recharge have been successful.
+          deposit: Deposit Request
+          accept: Accept
+          target_deposit: Wire Transfer
+          confirm: Confirm recharge?
+        update:
+          blank_txid: TxID can't be blank
+      eurs:
+        index:
+          oneday: Requests in the last 24 hours
+          available: All Pending Requests
+        show:
+          alert: Recharge cannot be located.
+          notice: The recharge have been successful.
+          deposit: Deposit Request
+          accept: Accept
+          target_deposit: Wire Transfer
+          confirm: Confirm recharge?
+        update:
+          blank_txid: TxID can't be blank
+      zars:
+        index:
+          oneday: Requests in the last 24 hours
+          available: All Pending Requests
+        show:
+          alert: Recharge cannot be located.
+          notice: The recharge have been successful.
+          deposit: Deposit Request
+          accept: Accept
+          target_deposit: Wire Transfer
+          confirm: Confirm recharge?
+        update:
+          blank_txid: TxID can't be blank
+      cyns:
+        index:
+          oneday: Requests in the last 24 hours
+          available: All Pending Requests
+        show:
+          alert: Recharge cannot be located.
+          notice: The recharge have been successful.
+          deposit: Deposit Request
+          accept: Accept
+          target_deposit: Wire Transfer
+          confirm: Confirm recharge?
+        update:
+          blank_txid: TxID can't be blank
       satoshis:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      litecoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      bitcredits:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      spreadcoins:
+        update:
+          notice: The deposit was successful.
+        index:
+          accept: Accept
+          accept_confirm: Confirm deposit?
+      dashs:
         update:
           notice: The deposit was successful.
         index:
@@ -1248,7 +2115,79 @@ en:
           succeed_confirm: Process withdrawal?
           reject_confirm: Reject withdrawal?
           withdraw: Withdrawals
+      litecoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      spreadcoins:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      bitcredits:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
+      dashs:
+        index:
+          one: Pending withdrawals
+          all: Last 24 hours
+          empty: No data
+        show:
+          process: Accepted
+          succeed: Withdraw
+          reject: Reject
+          succeed_confirm: Process withdrawal?
+          reject_confirm: Reject withdrawal?
+          withdraw: Withdrawals
   deposits/satoshi:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/litecoin:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/bitcredit:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/dash:
+    aasm_state:
+      submitted: Submitted
+      accepted: Accepted
+      checked: Checked
+      warning: Warning
+  deposits/spreadcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1261,7 +2200,7 @@ en:
       trade: Submit and cancel orders
     authorizations:
       new:
-        title: Peatio Application Authorization
+        title: BCR-E Application Authorization
         authorize_html: Authorize <strong class='text-info'>%{name}</strong> to use
           your account?
         scopes: 'This application will be able to:'
@@ -1319,7 +2258,84 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
+    litecoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    bitcredit:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    spreadcoin:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
+    dash:
+      amount: Amount
+      txid: TxId
+      created_at: Created At
+      confirmations: Confirmations
+      member_name: Member
+      state_and_actions: State/Actions
+      currency_obj_key_text: Currency
     bank:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      member_name: Member
+      state_and_actions: State/Action
+      currency_obj_key_text: Currency
+    usd:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      member_name: Member
+      state_and_actions: State/Action
+      currency_obj_key_text: Currency
+    cny:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      member_name: Member
+      state_and_actions: State/Action
+      currency_obj_key_text: Currency
+    gbp:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      member_name: Member
+      state_and_actions: State/Action
+      currency_obj_key_text: Currency
+    eur:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      member_name: Member
+      state_and_actions: State/Action
+      currency_obj_key_text: Currency
+    zar:
       sn: SN
       amount: Amount
       created_at: At
@@ -1350,6 +2366,14 @@ en:
     currency:
       cny: CNY
       btc: BTC
+      zar: ZAR
+      gbp: GBP
+      eur: EUR
+      usd: USD
+      bcr: BCR
+      spr: SPR
+      ltc: LTC
+      dash: DASH
     order:
       state:
         done: DONE
@@ -1377,6 +2401,15 @@ en:
     fund_source:
       category:
         satoshi: Bitcoin
+        litecoin: Litecoin
+        bitcredit: Bitcredit
+        spreadcoin: Spreadcoin
+        dash: Dash
+        usd: US Dollar
+        eur: EURO
+        gbp: British Pound
+        zar: S.A Rand
+        cny: Renimbi
         bank: Bank
     id_document:
       id_document_type:
@@ -1396,41 +2429,41 @@ en:
 
   mailer:
     dear_user: Dear user,
-    signature: Thanks,<br/>The Peatio Team
+    signature: Thanks,<br/>The BCR-E Team
     please_contact: If it's not you, please <a href='mailto:%{contact_mail}'>contact us</a> ASAP.
     footer: This is an automatically generated email, please do not reply, if you have any question, please <a href="mailto:%{contact_mail}">contact us</a>.
   comment_mailer:
     admin_notification:
-      subject: "[PEATIO] User reply a ticket"
+      subject: "[BCR-E] User reply a ticket"
       notification_content: User %{email} reply a ticket, please follow the link below to see the detail
     user_notification:
-      subject: "[PEATIO] Your ticket got a new reply"
+      subject: "[BCR-E] Your ticket got a new reply"
       notification_content: 'Your ticket got a new reply, please follow the link below to see the detail:'
   deposit_mailer:
     accepted:
-      subject: "[Peatio] Your deposit has been credited into your account"
+      subject: "[BCR-E] Your deposit has been credited into your account"
       content: Your %{currency} deposit has been credited into your account.
   member_mailer:
     notify_signin:
-      subject: "[PEATIO] You have just signed in"
+      subject: "[BCR-E] You have just signed in"
       just_signed_in: You have just signed in.
     google_auth_activated:
-      subject: "[PEATIO] Google authenticator activated"
+      subject: "[BCR-E] Google authenticator activated"
       google_auth_activated: You have activated google authenticator successfully
     google_auth_deactivated:
-      subject: "[PEATIO] Google authenticator deactivated"
+      subject: "[BCR-E] Google authenticator deactivated"
       google_auth_deactivated: You have deactivated google authenticator successfully
     sms_auth_activated:
-      subject: "[PEATIO] SMS authenticator activated"
+      subject: "[BCR-E] SMS authenticator activated"
       sms_auth_activated: You have activated SMS authenticator successfully
     sms_auth_deactivated:
-      subject: "[PEATIO] SMS authenticator deactivated"
+      subject: "[BCR-E] SMS authenticator deactivated"
       sms_auth_deactivated: You have deactivated SMS authenticator successfully
     reset_password_done:
-      subject: "[PEATIO] Your password changed"
+      subject: "[BCR-E] Your password changed"
       successful: Your password has been changed successfully.
     phone_number_verified:
-      subject: "[PEATIO] Your phone number verified"
+      subject: "[BCR-E] Your phone number verified"
       verified: 'Your phone number verified: %{phone_number}'
   system_mailer:
     daily_stats:
@@ -1443,39 +2476,39 @@ en:
       trades_change_total: Trades Changes Total
   ticket_mailer:
     admin_notification:
-      subject: "[PEATIO] User created a new ticket"
+      subject: "[BCR-E] User created a new ticket"
       admin_notification_content: User %{email} created a new ticket, please follow the link below to see the detail
     author_notification:
-      subject: "[PEATIO] Thank you for submit ticket"
+      subject: "[BCR-E] Thank you for submit ticket"
       thanks_for_submit_ticket: Thank you for submit ticket to us, we will get back to you as soon as possible.
   token_mailer:
     activation:
-      subject: "[Peatio] Account Activation"
-      click_to_verify: 'Thank you for signing up on Peatio, please follow this link to verify your Email:'
+      subject: "[BCR-E] Account Activation"
+      click_to_verify: 'Thank you for signing up on BCR-E, please follow this link to verify your Email:'
       unable_to_click: Copy and open the link in your browser if you are unable to click and visit it.
       link_expire: The link expires in 30 minutes.
     reset_password:
-      subject: "[Peatio] Please Reset Your Password"
+      subject: "[BCR-E] Please Reset Your Password"
       hi: Hi,
       follow_the_link: 'Please follow this link to reset your password within 30 minutes:'
   withdraw_mailer:
     submitted:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[BCR-E] Your withdraw state update"
       content: The request of your %{currency} withdrawal has been successfully submitted, We will process it as soon as possible. Please be patient with us. Contact us if you have any questions.
     processing:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[BCR-E] Your withdraw state update"
       content: The request of your %{currency} withdrawal is in process. Please be patient with us. Contact us if you have any questions.
     done:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[BCR-E] Your withdraw state update"
       content: The request of your %{currency} withdrawal is complete. Please check it out. Contact us if you have any questions.
     withdraw_state:
-      subject: "[Peatio] Your withdraw state update"
+      subject: "[BCR-E] Your withdraw state update"
       your_state: 'Your withdrawal state: '
 
   'true': true
   'false': false
   view_on_github: View on Github
-  slogan: An open-source crypto-currency exchange for world.
+  slogan: Trading made easy
   tags:
     vip: VIP
     hero: Hero Member
@@ -1489,9 +2522,9 @@ en:
   gon:
     ask: Ask
     bid: Bid
-    brand: Peatio Exchange
+    brand: BCR-E Exchange
     notification:
-      title: Peatio Exchange
+      title: BCR-E Exchange
       enabled: Notification enabled.
       new_trade: "%{kind} order#%{id} executed at %{price} %{quote_unit} for %{volume} %{base_unit}。"
   back: Back
@@ -1523,7 +2556,7 @@ en:
     signup: Sign Up
     login_via_weibo: Login via Weibo
     funds: Funds
-    getstart: Get Start
+    getstart: Get Started
     assets: Solvency
     history: History
     order_history: Order History
@@ -1698,9 +2731,9 @@ en:
     application:
       close: Close
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio - The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
+      page_title: BCR-E
+      page_description: Cryptocurrency Trading
+      page_keywords: BCR-E,Exchange,Cryptocurrency
   members:
     edit:
       name: Please fill out the application.
@@ -1784,7 +2817,7 @@ en:
       edit:
         submit: Disable
         warning: 'Tip: If you have lost your Two-Factor Authentication by some reason
-          and can''t login your Peatio account, please contact our online customer
+          and can''t login your BCR-E account, please contact our online customer
           service.'
       show:
         step-1: Step 1
@@ -1838,6 +2871,41 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
+    usd:
+      key: Bank Transfer
+      title: Bank Transfer
+      intro: Bank transfer deposits, Recommend for large recharge
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    gbp:
+      key: Bank Transfer
+      title: Bank Transfer
+      intro: Bank transfer deposits, Recommend for large recharge
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    eur:
+      key: Bank Transfer
+      title: Bank Transfer
+      intro: Bank transfer deposits, Recommend for large recharge
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    zar:
+      key: Bank Transfer
+      title: Bank Transfer
+      intro: Bank transfer deposits, Recommend for large recharge
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
+    cny:
+      key: Bank Transfer
+      title: Bank Transfer
+      intro: Bank transfer deposits, Recommend for large recharge
+      latency: 30 minutes
+      transfer: Manual
+      go: Withdraw
     satoshi:
       key: Blockchain
       title: Bitcoin Blockchain
@@ -1845,9 +2913,97 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
+    litecoin:
+      key: Blockchain
+      title: Litecoin Blockchain
+      intro: Withdraw Bitcoin to your own Bitcoin wallet
+      latency: 10 minutes
+      transfer: Manual
+      go: Withdraw
+    bitcredit:
+      key: Blockchain
+      title: Bitcredit Blockchain
+      intro: Withdraw Bitcoin to your own Bitcoin wallet
+      latency: 3 minutes
+      transfer: Manual
+      go: Withdraw
+    spreadcoin:
+      key: Blockchain
+      title: Spreadcoin Blockchain
+      intro: Withdraw Bitcoin to your own Bitcoin wallet
+      latency: 6 minutes
+      transfer: Manual
+      go: Withdraw
+    dash:
+      key: Blockchain
+      title: Dash Blockchain
+      intro: Withdraw Bitcoin to your own Bitcoin wallet
+      latency: 5 minutes
+      transfer: Manual
+      go: Withdraw
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
   withdraws/bank:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: Processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Canceld
+      failed: Failed
+  withdraws/usd:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: Processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Canceld
+      failed: Failed
+  withdraws/eur:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: Processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Canceld
+      failed: Failed
+  withdraws/gbp:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: Processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Canceld
+      failed: Failed
+  withdraws/cny:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: Processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Canceld
+      failed: Failed
+  withdraws/zar:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
@@ -1871,3 +3027,51 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
+  withdraws/litecoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed
+  withdraws/bitcredit:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed      
+  withdraws/spreadcoin:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed    
+  withdraws/dash:
+    aasm_state:
+      submitting: Submitting
+      submitted: Submitted
+      rejected: Rejected
+      accepted: Accepted
+      suspect: Suspect
+      processing: processing
+      done: Done
+      almost_done: Almost Done
+      canceled: Cancelled
+      failed: Failed        

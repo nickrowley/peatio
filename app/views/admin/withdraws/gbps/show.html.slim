@@ -1,0 +1,38 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @gbp.sn)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @gbp, :id
+          = item_for @gbp, :created_at
+          = item_for @gbp, :aasm_state_text
+          hr.split
+          = item_for @gbp.member, :name do
+            span.fa.fa-copy data-clipboard-text='#{@gbp.member.name}' = @gbp.member.name
+          = item_for @gbp, :fund_extra do
+            span.fa.fa-copy data-clipboard-text='#{gbp_code_to_name @gbp.fund_extra}' = gbp_code_to_name @gbp.fund_extra
+          = item_for @gbp, :fund_uid do
+            span.fa.fa-copy data-clipboard-text='#{@gbp.fund_uid}' = @gbp.fund_uid
+          = item_for @gbp, :amount do
+            span.fa.fa-copy data-clipboard-text='#{@gbp.amount}' = @gbp.amount
+          hr.split
+          hr.split
+          = item_for @gbp, :remark do
+            span.fa.fa-copy data-clipboard-text='#{@gbp.remark}' = @gbp.remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @gbp.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @gbp]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @gbp.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @gbp]), class: 'btn btn-primary', method: 'PATCH'
+            - if @gbp.may_succeed?
+              li
+                = link_to t('.succeed'), url_for([:admin, @gbp]), class: 'btn btn-success', method: 'PATCH', confirm: t('.succeed_confirm')
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @gbp.member}
+    = render partial: 'shared/admin/account', locals: {account: @gbp.account}

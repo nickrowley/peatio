@@ -8,3 +8,133 @@
   ask: {fee: 0, currency: btc, fixed: 4}
   sort_order: 1
   #visible: false     # default to true
+- id: btcusd
+  code: 4
+  #name: BTC/USD      # default name
+  base_unit: btc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 2
+  #visible: false     # default to true
+- id: ltccny
+  code: 5
+  #name: LTC/CNY      # default name
+  base_unit: ltc
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 3
+  #visible: false     # default to true
+- id: ltcusd
+  code: 6
+  #name: LTC/USD      # default name
+  base_unit: ltc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 4
+  #visible: false     # default to true
+- id: ltcbtc
+  code: 7
+  #name: LTC/BTC      # default name
+  base_unit: ltc
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 5
+  #visible: false     # default to true
+- id: dashbtc
+  code: 8
+  #name: BTC/DASH      # default name
+  base_unit: dash
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 6
+  #visible: false     # default to true
+- id: dashusd
+  code: 9
+  #name: DASH/USD      # default name
+  base_unit: dash
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 7
+  #visible: false     # default to true
+- id: dashcny
+  code: 10
+  #name: DASH/CNY      # default name
+  base_unit: dash
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 8
+  #visible: false     # default to true
+- id: bcrcny
+  code: 11
+  #name: BCR/CNY      # default name
+  base_unit: bcr
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: bcr, fixed: 4}
+  sort_order: 9
+  #visible: false     # default to true
+- id: bcrusd
+  code: 12
+  #name: BCR/USD      # default name
+  base_unit: bcr
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: bcr, fixed: 4}
+  sort_order: 10
+  #visible: false     # default to true
+- id: bcrbtc
+  code: 13
+  #name: BTC/BCR      # default name
+  base_unit: btc
+  quote_unit: bcr
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: bcr, fixed: 4}
+  sort_order: 11
+  #visible: false     # default to true
+- id: sprusd
+  code: 14
+  #name: SPR/USD      # default name
+  base_unit: spr
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: spr, fixed: 4}
+  sort_order: 12
+  #visible: false     # default to true
+- id: sprcny
+  code: 15
+  #name: SPR/CNY      # default name
+  base_unit: spr
+  quote_unit: cny
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: cny, fixed: 2}
+  ask: {fee: 0, currency: spr, fixed: 4}
+  sort_order: 13
+  #visible: false     # default to true
+- id: sprbtc
+  code: 16
+  #name: SPR/BTC      # default name
+  base_unit: spr
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: spr, fixed: 4}
+  sort_order: 14
+  #visible: false     # default to true

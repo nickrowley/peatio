@@ -2,15 +2,80 @@
   key: satoshi
   currency: btc
   sort_order: 1
-  min_confirm: 1
-  max_confirm: 3
+  min_confirm: 2
+  max_confirm: 5
+- id: 201
+  key: litecoin
+  currency: ltc
+  sort_order: 2
+  min_confirm: 2
+  max_confirm: 5
+- id: 202
+  key: bitcredit
+  currency: bcr
+  sort_order: 3
+  min_confirm: 6
+  max_confirm: 21
+- id: 203
+  key: dash
+  currency: dash
+  sort_order: 4
+  min_confirm: 5
+  max_confirm: 5
+- id: 204
+  key: spreadcoin
+  currency: spr
+  sort_order: 5
+  min_confirm: 5
+  max_confirm: 5
 - id: 400
   key: bank
   currency: cny
-  sort_order: 2
+  sort_order: 6
   bank_accounts:
     -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
+      holder: 'Section 32'
+      account: 'TBA'
+- id: 401
+  key: usd
+  currency: usd
+  sort_order: 7
+  bank_accounts:
+    -
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
+      holder: 'Section 32'
+      account: 'TBA'
+- id: 402
+  key: gbp
+  currency: gbp
+  sort_order: 8
+  bank_accounts:
+    -
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
+      holder: 'Section 32'
+      account: 'TBA'     
+- id: 403
+  key: zar
+  currency: zar
+  sort_order: 9
+  bank_accounts:
+    -
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
+      holder: 'Section 32'
+      account: 'TBA'             
+- id: 404
+  key: eur
+  currency: eur
+  sort_order: 10
+  bank_accounts:
+    -
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
+      holder: 'Section 32'
+      account: 'TBA'
+

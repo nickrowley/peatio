@@ -21,6 +21,14 @@ describe Private::AssetsController do
       it { should respond_with :ok }
       it { expect(assigns(:btc_account)).to be_nil }
       it { expect(assigns(:cny_account)).to be_nil }
+      it { expect(assigns(:ltc_account)).to be_nil }
+      it { expect(assigns(:bcr_account)).to be_nil }      
+      it { expect(assigns(:spr_account)).to be_nil }
+      it { expect(assigns(:dash_account)).to be_nil }
+      it { expect(assigns(:usd_account)).to be_nil }
+      it { expect(assigns(:gbp_account)).to be_nil }
+      it { expect(assigns(:eur_account)).to be_nil }
+      it { expect(assigns(:zar_account)).to be_nil }      
     end
   end
 

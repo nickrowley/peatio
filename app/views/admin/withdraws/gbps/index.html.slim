@@ -1,0 +1,12 @@
+- unless @one_gbps.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {gbps: @one_gbps}
+
+- unless @all_gbps.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {gbps: @all_gbps}
+
+- if @all_gbps.empty? and @one_gbps.empty?
+  h3.text-info.text-center = t('.empty')
