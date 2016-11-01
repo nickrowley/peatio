@@ -35,7 +35,7 @@ production:
 
   # pusher settings
   # --------------------------------------------------------------
-  # peatio dependence Pusher (http://pusher.com) service
+  # zimbitx dependence Pusher (http://pusher.com) service
   # you can change your key for production environment.
   # we support development key and secret
   # uncomment below line only development or test
@@ -71,4 +71,4 @@ production:
   # chat setting
   # --------------------------------------------------------------
   # Do you want chat feature in your exchange ?
-  # send mail to community@peatio.com
+  # send mail to community@zimbitx.com

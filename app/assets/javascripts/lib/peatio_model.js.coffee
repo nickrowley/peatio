@@ -516,25 +516,25 @@ makeArray = (args) ->
 
 # Globals
 
-PeatioModel = @PeatioModel= {}
-module?.exports  = PeatioModel
+ZimbitxModel = @ZimbitxModel= {}
+module?.exports  = ZimbitxModel
 
-PeatioModel.version    = '1.3.2.customizatiion'
-PeatioModel.isArray    = isArray
-PeatioModel.isBlank    = isBlank
-PeatioModel.$          = $
-PeatioModel.Events     = Events
-PeatioModel.Log        = Log
-PeatioModel.Module     = Module
-PeatioModel.Model      = Model
+ZimbitxModel.version    = '1.3.2.customizatiion'
+ZimbitxModel.isArray    = isArray
+ZimbitxModel.isBlank    = isBlank
+ZimbitxModel.$          = $
+ZimbitxModel.Events     = Events
+ZimbitxModel.Log        = Log
+ZimbitxModel.Module     = Module
+ZimbitxModel.Model      = Model
 
 # Global events
 
-Module.extend.call(PeatioModel, Events)
+Module.extend.call(ZimbitxModel, Events)
 
 Model.setup = (name, attributes = []) ->
   class Instance extends this
   Instance.configure(name, attributes...)
   Instance
 
-PeatioModel.Class = Module
+ZimbitxModel.Class = Module

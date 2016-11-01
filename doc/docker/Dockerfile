@@ -1,5 +1,5 @@
 FROM phusion/passenger-full
-MAINTAINER PEATIO community@peatio.com
+MAINTAINER ZIMBITX community@zimbitx.com
 
 # Set correct environment variables.
 ENV HOME /root
@@ -10,32 +10,32 @@ CMD ["/sbin/my_init"]
 RUN apt update
 RUN apt-get -y install imagemagick gsfonts
 
-ADD peatio /home/app/peatio
-RUN chown -R app:app /home/app/peatio
+ADD zimbitx /home/app/zimbitx
+RUN chown -R app:app /home/app/zimbitx
 
 USER app
 ENV HOME /home/app
 
-WORKDIR /home/app/peatio
+WORKDIR /home/app/zimbitx
 RUN bundle install --without development test --path vendor/bundle
 
 # RUN ./bin/init_config
-ADD conf/rails-amqp.yml /home/app/peatio/config/amqp.yml
-ADD conf/rails-database.yml /home/app/peatio/config/database.yml
-ADD conf/rails-application.yml /home/app/peatio/config/application.yml
-ADD conf/nginx-peatio-env.conf /etc/nginx/main.d/peatio-env.conf
+ADD conf/rails-amqp.yml /home/app/zimbitx/config/amqp.yml
+ADD conf/rails-database.yml /home/app/zimbitx/config/database.yml
+ADD conf/rails-application.yml /home/app/zimbitx/config/application.yml
+ADD conf/nginx-zimbitx-env.conf /etc/nginx/main.d/zimbitx-env.conf
 
 USER root
 
 RUN rm /etc/nginx/sites-enabled/default
-ADD conf/nginx-peatio-with-ssl.conf /etc/nginx/sites-available/peatio
-RUN ln -s /etc/nginx/sites-available/peatio /etc/nginx/sites-enabled/peatio
+ADD conf/nginx-zimbitx-with-ssl.conf /etc/nginx/sites-available/zimbitx
+RUN ln -s /etc/nginx/sites-available/zimbitx /etc/nginx/sites-enabled/zimbitx
 
 RUN mkdir /etc/nginx/ssl_keys/
 ADD conf/ssl_keys/server.crt /etc/nginx/ssl_keys/server.crt
 ADD conf/ssl_keys/server.key /etc/nginx/ssl_keys/server.key
 
-RUN chown -R app:app /home/app/peatio/config
+RUN chown -R app:app /home/app/zimbitx/config
 
 RUN rm -f /etc/service/nginx/down
 

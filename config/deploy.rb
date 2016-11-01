@@ -4,11 +4,11 @@ require 'mina/git'
 require 'mina/rbenv'
 require 'mina/slack/tasks'
 
-set :repository, 'https://github.com/peatio/peatio.git'
+set :repository, 'https://github.com/zimbitx/zimbitx.git'
 set :user, 'deploy'
-set :deploy_to, '/home/deploy/peatio'
+set :deploy_to, '/home/deploy/zimbitx'
 set :branch, 'master'
-set :domain, 'demo.peatio.com'
+set :domain, 'demo.zimbitx.com'
 
 set :shared_paths, [
   'config/database.yml',

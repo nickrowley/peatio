@@ -1,4 +1,4 @@
-class Withdraw extends PeatioModel.Model
+class Withdraw extends ZimbitxModel.Model
   @configure 'Withdraw', 'sn', 'account_id', 'member_id', 'currency', 'amount', 'fee', 'fund_uid', 'fund_extra',
     'created_at', 'updated_at', 'done_at', 'txid', 'blockchain_url', 'aasm_state', 'sum', 'type', 'is_submitting'
 
@@ -7,7 +7,7 @@ class Withdraw extends PeatioModel.Model
     @is_submitting = @aasm_state == "submitting"
 
   @initData: (records) ->
-    PeatioModel.Ajax.disable ->
+    ZimbitxModel.Ajax.disable ->
       $.each records, (idx, record) ->
         Withdraw.create(record)
 
@@ -16,7 +16,9 @@ class Withdraw extends PeatioModel.Model
 
   pathName: ->
     switch @currency
-      when 'cny' then 'banks'
+      when 'usd' then 'banks'
       when 'btc' then 'satoshis'
+      when 'ltc' then 'litecoins'
+      when 'dash' then 'dashs'
 
 window.Withdraw = Withdraw

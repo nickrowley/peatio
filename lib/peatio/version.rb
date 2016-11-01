@@ -1,3 +1,3 @@
-module Peatio
-  VERSION = "0.2.1"
+module Zimbitx
+  VERSION = "0.0.1"
 end
