@@ -140,7 +140,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 **Clone the project**
 
-    git clone git://github.com/zimbitx/zimbitx.git
+    git clone git://github.com/peatio/peatio.git
     cd zimbitx
     bundle install
 

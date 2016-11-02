@@ -172,7 +172,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 ##### Clone the Source
 
     mkdir -p ~/zimbitx
-    git clone git://github.com/zimbitx/zimbitx.git ~/zimbitx/current
+    git clone git://github.com/peatio/peatio.git ~/peatio/current
     cd zimbitx/current
 
     ＃ Install dependency gems

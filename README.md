@@ -93,7 +93,7 @@ You can interact with Zimbitx through API:
 
 Here're some API clients and/or wrappers:
 
-* [zimbitx-client-ruby](https://github.com/zimbitx/zimbitx-client-ruby) is the official ruby client of both HTTP/Websocket API.
+* [zimbitx-client-ruby](https://github.com/peatio/peatio-client-ruby) is the official ruby client of both HTTP/Websocket API.
 * [zimbitx-client-python by JohnnyZhao](https://github.com/JohnnyZhao/zimbitx-client-python) is a python client written by JohnnyZhao.
 * [zimbitx-client-python by czheo](https://github.com/JohnnyZhao/zimbitx-client-python) is a python wrapper similar to zimbitx-client-ruby written by czheo.
 * [zimbitxJavaClient](https://github.com/classic1999/zimbitxJavaClient.git) is a java client written by classic1999.
@@ -116,7 +116,7 @@ Zimbitx front-end based Bootstrap 3.0 version and Sass, and you can custom excha
 
 Want to report a bug, request a feature, contribute or translate Zimbitx?
 
-* Browse our [issues](https://github.com/zimbitx/zimbitx/issues), comment on proposals, report bugs.
+* Browse our [issues](https://github.com/peatio/peatio/issues), comment on proposals, report bugs.
 * Clone the zimbitx repo, make some changes according to our development guidelines and issue a pull-request with your changes.
 * Anything you want to tell us please send it to [community@zimbitx.com](mailto:community@zimbitx.com)
 * If you need technical support or customization service, contact us: [sales@zimbitx.com](mailto:sales@zimbitx.com)

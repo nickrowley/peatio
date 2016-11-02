@@ -4,9 +4,9 @@ require 'mina/git'
 require 'mina/rbenv'
 require 'mina/slack/tasks'
 
-set :repository, 'https://github.com/zimbitx/zimbitx.git'
+set :repository, 'https://github.com/peatio/peatio.git'
 set :user, 'deploy'
-set :deploy_to, '/home/deploy/zimbitx'
+set :deploy_to, '/home/deploy/peatio'
 set :branch, 'master'
 set :domain, 'demo.zimbitx.com'
 

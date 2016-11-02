@@ -107,7 +107,7 @@ Zimbitx uses Capybara with PhantomJS to do the feature tests, so if you want to 
 
 **Clone the project**
 
-    git clone git://github.com/zimbitx/zimbitx.git
+    git clone git://github.com/peatio/peatio.git
     cd zimbitx
     bundle install
 
