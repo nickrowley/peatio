@@ -2,15 +2,27 @@
   key: satoshi
   currency: btc
   sort_order: 1
-  min_confirm: 1
-  max_confirm: 3
+  min_confirm: 3
+  max_confirm: 5
+- id: 201
+  key: litecoin
+  currency: ltc
+  sort_order: 2
+  min_confirm: 3
+  max_confirm: 5
+- id: 202
+  key: dash
+  currency: dash
+  sort_order: 4
+  min_confirm: 3
+  max_confirm: 5
 - id: 400
   key: bank
-  currency: cny
+  currency: usd
   sort_order: 2
   bank_accounts:
     -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
+      bank: 'Stanbic Bank'
+      branch: 'Borrowdale Branch'
       holder: 'Your Account Holder'
       account: 'Your Account Number'

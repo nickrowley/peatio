@@ -1,10 +1,50 @@
-- id: btccny
+- id: btcusd
   code: 3
-  #name: BTC/CNY      # default name
+  #name: BTC/USD      # default name
   base_unit: btc
-  quote_unit: cny
+  quote_unit: usd
   #price_group_fixed: 1 # aggregate price levels in orderbook
-  bid: {fee: 0, currency: cny, fixed: 2}
+  bid: {fee: 0, currency: usd, fixed: 2}
   ask: {fee: 0, currency: btc, fixed: 4}
   sort_order: 1
+  #visible: false     # default to true
+- id: ltcusd
+  code: 6
+  #name: LTC/USD      # default name
+  base_unit: ltc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 2
+  #visible: false     # default to true
+- id: dashusd
+  code: 9
+  #name: DASH/USD      # default name
+  base_unit: dash
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 3
+  #visible: false     # default to true
+- id: dashbtc
+  code: 8
+  #name: BTC/DASH      # default name
+  base_unit: dash
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: dash, fixed: 4}
+  sort_order: 4
+  #visible: false     # default to true
+- id: ltcbtc
+  code: 7
+  #name: BTC/LTC      # default name
+  base_unit: ltc
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: ltc, fixed: 4}
+  sort_order: 5
   #visible: false     # default to true

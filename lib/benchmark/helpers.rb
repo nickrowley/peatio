@@ -13,9 +13,11 @@ module Benchmark
     def lock_funds
       @members[:ask].each do |m|
         m.get_account(:btc).update_attributes(locked: 100)
+        m.get_account(:ltc).update_attributes(locked: 100)
+        m.get_account(:dash).update_attributes(locked: 100)
       end
       @members[:bid].each do |m|
-        m.get_account(:cny).update_attributes(locked: 1000000)
+        m.get_account(:usd).update_attributes(locked: 1000000)
       end
     end
 

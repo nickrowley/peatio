@@ -616,8 +616,10 @@ header {
     .markets {
       tr { display: none; }
       &.all { tr { display: block; } }
-      &.cny { tr.quote-cny { display: block; } }
+      &.usd { tr.quote-usd { display: block; } }
       &.btc { tr.quote-btc { display: block; } }
+      &.ltc { tr.quote-ltc { display: block; } }
+      &.dash { tr.quote-dash { display: block; } }
     }
   }
 }
