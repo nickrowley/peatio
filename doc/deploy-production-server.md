@@ -12,7 +12,7 @@ Deploy production server on Ubuntu 14.04
 7. Install [Nginx with Passenger](https://www.phusionpassenger.com/)
 8. Install JavaScript Runtime
 9. Install ImageMagick
-10. Configure Peatio
+10. Configure Zimbitx
 
 ### 1. Setup deploy user
 
@@ -113,7 +113,7 @@ Insert the following lines into the bitcoin.conf, and replce with your username 
     rpcport=18332
 
     # Notify when receiving coins
-    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=peatio.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
+    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=zimbitx.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
 
 **Start bitcoin**
 
@@ -171,14 +171,14 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 ##### Clone the Source
 
-    mkdir -p ~/peatio
+    mkdir -p ~/zimbitx
     git clone git://github.com/peatio/peatio.git ~/peatio/current
-    cd peatio/current
+    cd zimbitx/current
 
     ＃ Install dependency gems
     bundle install --without development test --path vendor/bundle
 
-##### Configure Peatio
+##### Configure Zimbitx
 
 **Prepare configure files**
 
@@ -186,7 +186,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 **Setup Pusher**
 
-* Peatio depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
+* Zimbitx depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
 
 More details to visit [pusher official website](http://pusher.com)
 
@@ -228,7 +228,7 @@ More details to visit [pusher official website](http://pusher.com)
     # You can do the same when you start all daemons:
     TRADE_EXECUTOR=4 rake daemons:start
 
-When daemons don't work, check `log/#{daemon name}.rb.output` or `log/peatio:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
+When daemons don't work, check `log/#{daemon name}.rb.output` or `log/zimbitx:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
 
 **SSL Certificate setting**
 
@@ -239,7 +239,7 @@ For security reason, you must setup SSL Certificate for production environment, 
 **Passenger:**
 
     sudo rm /etc/nginx/sites-enabled/default
-    sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
+    sudo ln -s /home/deploy/zimbitx/current/config/nginx.conf /etc/nginx/conf.d/zimbitx.conf
     sudo service nginx restart
 
 **Liability Proof**

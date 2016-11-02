@@ -1,8 +1,8 @@
-class Currency extends PeatioModel.Model
+class Currency extends ZimbitxModel.Model
   @configure 'Currency', 'key', 'code', 'coin', 'blockchain'
 
   @initData: (records) ->
-    PeatioModel.Ajax.disable ->
+    ZimbitxModel.Ajax.disable ->
       $.each records, (idx, record) ->
         currency = Currency.create(record.attributes)
 

@@ -1,9 +1,9 @@
 staging: &defaults
   payload:
-    channel: '#peatio'
+    channel: '#zimbitx'
     username: minabot
   token: ~
-  hook_url: https://peatio.slack.com/services/hooks/incoming-webhook?token=
+  hook_url: https://zimbitx.slack.com/services/hooks/incoming-webhook?token=
 
 production:
   <<: *defaults

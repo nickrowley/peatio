@@ -11,7 +11,7 @@ Setup local development environment on OS X
 6. Install [Bitcoind](https://en.bitcoin.it/wiki/Bitcoind)
 7. Install [PhantomJS](http://phantomjs.org/)
 8. Install ImageMagick
-9. Configure Peatio
+9. Configure Zimbitx
 
 ### 1. Install Homebrew
 
@@ -87,7 +87,7 @@ Insert the following lines into the bitcoin.conf, and replce with your username 
     rpcport=18332
 
     # Notify when receiving coins
-    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=peatio.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
+    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=zimbitx.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
 
 and then start Bitcoind with
 
@@ -95,20 +95,20 @@ and then start Bitcoind with
 
 ### 7. Install PhantomJS
 
-Peatio uses Capybara with PhantomJS to do the feature tests, so if you want to run the tests. Install the PhantomJS is neccessary.
+Zimbitx uses Capybara with PhantomJS to do the feature tests, so if you want to run the tests. Install the PhantomJS is neccessary.
 
     brew install phantomjs
 
-### 8. Configure Peatio
+### 8. Configure Zimbitx
 
     brew install imagemagick
 
-### 9. Configure Peatio
+### 9. Configure Zimbitx
 
 **Clone the project**
 
     git clone git://github.com/peatio/peatio.git
-    cd peatio
+    cd zimbitx
     bundle install
 
 **Prepare configure files**
@@ -117,7 +117,7 @@ Peatio uses Capybara with PhantomJS to do the feature tests, so if you want to r
 
 **Setup Pusher**
 
-* Peatio depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
+* Zimbitx depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
 
 More details to visit [pusher official website](http://pusher.com)
 
@@ -155,14 +155,14 @@ More details to visit [pusher official website](http://pusher.com)
     # You can do the same when you start all daemons:
     TRADE_EXECUTOR=4 rake daemons:start
 
-When daemons don't work, check `log/#{daemon name}.rb.output` or `log/peatio:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
+When daemons don't work, check `log/#{daemon name}.rb.output` or `log/zimbitx:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
 
-**Run Peatio**
+**Run Zimbitx**
 
     # start server
     bundle exec rails server
 
 **Visit [http://localhost:3000](http://localhost:3000)**
 
-    user: admin@peatio.dev
+    user: admin@zimbitx.dev
     pass: Pass@word8

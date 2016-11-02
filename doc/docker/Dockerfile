@@ -1,5 +1,5 @@
 FROM phusion/passenger-full
-MAINTAINER PEATIO community@peatio.com
+MAINTAINER ZIMBITX community@peatio.com
 
 # Set correct environment variables.
 ENV HOME /root

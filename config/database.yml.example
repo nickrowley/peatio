@@ -1,7 +1,7 @@
 development: &defaults
   adapter: mysql2
   encoding: utf8
-  database: peatio_development
+  database: zimbitx_development
   username: root
   password:
   pool: 10
@@ -9,8 +9,8 @@ development: &defaults
 
 test:
   <<: *defaults
-  database: peatio_test
+  database: zimbitx_test
 
 production:
   <<: *defaults
-  database: peatio_production
+  database: zimbitx_production

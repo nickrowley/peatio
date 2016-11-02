@@ -4,7 +4,7 @@ docker run -d --name webapp \
   --link rabbitmq:rabbitmq \
   --link dbmaster:dbmaster \
   --link redis:redis \
-  peatio:base /sbin/my_init --enable-insecure-key
+  zimbitx:base /sbin/my_init --enable-insecure-key
 
 docker-bash webapp bash -lc 'cd /home/app/peatio/; git pull;'
 docker-bash webapp bash -lc 'cd /home/app/peatio/; RAILS_ENV=production ./bin/rake db:migrate;'

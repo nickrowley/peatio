@@ -12,7 +12,7 @@ docker build -t peatio/base .
 Operating Systems
 -----------------
 
-Peatio is developed for Mac and Linux operating system, Ubuntu 14.04 LTS is recommended.
+Zimbitx is developed for Mac and Linux operating system, Ubuntu 14.04 LTS is recommended.
 
 ## Officially supports
 
@@ -21,7 +21,7 @@ Peatio is developed for Mac and Linux operating system, Ubuntu 14.04 LTS is reco
 
 ## Ruby versions
 
-Peatio requires Ruby (MRI) 2.1.0+. You will have to use the standard MRI implementation of Ruby.
+Zimbitx requires Ruby (MRI) 2.1.0+. You will have to use the standard MRI implementation of Ruby.
 
 ## Hardware requirements
 
@@ -49,8 +49,8 @@ If you run bitcoind at local, the necessary hard drive space largely depends on 
 
 ## Development Dependencies
 
-* [RabbitMQ](https://www.rabbitmq.com/) is Peatio's backbone, it's the message broker doing all the message exchanges between daemons.
-* Peatio use [Phantomjs](http://phantomjs.org/) to test JavaScript.
+* [RabbitMQ](https://www.rabbitmq.com/) is Zimbitx's backbone, it's the message broker doing all the message exchanges between daemons.
+* Zimbitx use [Phantomjs](http://phantomjs.org/) to test JavaScript.
 * PhantomJS
 
 ## Support

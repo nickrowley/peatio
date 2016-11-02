@@ -11,7 +11,7 @@ Setup local development environment on Ubuntu 14.04
 6. Install [PhantomJS](http://phantomjs.org/)
 7. Install JavaScript Runtime
 8. Install ImageMagick
-9. Configure Peatio
+9. Configure Zimbitx
 
 
 ### Step 1: Install Ruby
@@ -104,7 +104,7 @@ Insert the following lines into the bitcoin.conf, and replce with your username 
     rpcport=18332
 
     # Notify when receiving coins
-    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=peatio.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
+    walletnotify=/usr/local/sbin/rabbitmqadmin publish routing_key=zimbitx.deposit.coin payload='{"txid":"%s", "channel_key":"satoshi"}'
 
 **Start bitcoin**
 
@@ -112,7 +112,7 @@ Insert the following lines into the bitcoin.conf, and replce with your username 
 
 ### Step 6: Install PhantomJS
 
-Peatio uses Capybara with PhantomJS to do the feature tests, so if you want to run the tests. Install the PhantomJS is neccessary.
+Zimbitx uses Capybara with PhantomJS to do the feature tests, so if you want to run the tests. Install the PhantomJS is neccessary.
 
     sudo apt-get update
     sudo apt-get install build-essential chrpath git-core libssl-dev libfontconfig1-dev
@@ -136,12 +136,12 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
     sudo apt-get install imagemagick
 
-### Step 9: Configure Peatio
+### Step 9: Configure Zimbitx
 
 **Clone the project**
 
     git clone git://github.com/peatio/peatio.git
-    cd peatio
+    cd zimbitx
     bundle install
 
 **Prepare configure files**
@@ -150,7 +150,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 **Setup Pusher**
 
-* Peatio depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
+* Zimbitx depends on [Pusher](http://pusher.com). A development key/secret pair for development/test is provided in `config/application.yml` (uncomment to use). PLEASE USE IT IN DEVELOPMENT/TEST ENVIRONMENT ONLY!
 
 More details to visit [pusher official website](http://pusher.com)
 
@@ -188,14 +188,14 @@ More details to visit [pusher official website](http://pusher.com)
     # You can do the same when you start all daemons:
     TRADE_EXECUTOR=4 rake daemon:start
 
-When daemons don't work, check `log/#{daemon name}.rb.output` or `log/peatio:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
+When daemons don't work, check `log/#{daemon name}.rb.output` or `log/zimbitx:amqp:#{daemon name}.output` for more information (suffix is '.output', not '.log').
 
-**Run Peatio**
+**Run Zimbitx**
 
     # start server
     bundle exec rails server
 
 **Visit [http://localhost:3000](http://localhost:3000)**
 
-    user: admin@peatio.dev
+    user: admin@zimbitx.dev
     pass: Pass@word8

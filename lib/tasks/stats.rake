@@ -1,10 +1,10 @@
 namespace :stats do
 
   def asset_value(ts, currency, amount)
-    if currency.code != 'cny'
+    if currency.code != 'usd'
       redis = KlineDB.redis
-      market = Market.find "#{currency.code}cny"
-      key = "peatio:#{market.id}:k:60"
+      market = Market.find "#{currency.code}usd"
+      key = "zimbitx:#{market.id}:k:60"
       last_hour = 23.hours.since(Time.at ts)
 
       if redis.llen(key) > 0

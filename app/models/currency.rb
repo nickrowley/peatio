@@ -39,7 +39,7 @@ class Currency < ActiveYamlBase
   end
 
   def balance_cache_key
-    "peatio:hotwallet:#{code}:balance"
+    "zimbitx:hotwallet:#{code}:balance"
   end
 
   def balance
